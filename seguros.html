@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seguros</title>
+  <title>Servicios - Seguros</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,113 +20,130 @@
     });
   </script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans overflow-x-hidden">
+<body>
     <!-- Navbar común -->
-    <nav class="bg-white shadow fixed w-full z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold text-blue-900">Seguros Ejemplo</h1>
-        <div class="space-x-4">
-            <a href="index.html" class="text-blue-900 font-semibold hover:text-blue-600">Inicio</a>
-            <a href="index.html#nosotros" class="text-blue-900 font-semibold hover:text-blue-600">Nosotros</a>
-            <a href="seguros.html" class="text-blue-900 font-semibold hover:text-blue-600">Seguros</a>
-            <a href="index.html#contacto" class="text-blue-900 font-semibold hover:text-blue-600">Contacto</a>
-            <a href="blog.html" class="text-blue-900 font-semibold hover:text-blue-600">Blog</a>
-            <a href="preguntas.html" class="text-blue-900 font-semibold hover:text-blue-600">FAQ</a>
-        </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="navbar-brand">Seguros Ejemplo</h1>
+            <div class="navbar-links">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html#nosotros" class="nav-link">Nosotros</a>
+                <a href="seguros.html" class="nav-link">Seguros</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="preguntas.html" class="nav-link">FAQ</a>
+            </div>
         </div>
     </nav>
 
-  <div class="pt-24"></div> 
-  
-  <section class="py-16 max-w-6xl mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 text-red-700" data-aos="fade-up">Nuestros Seguros</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="100">
-      <!-- Card -->
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-heartbeat fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">SALUD</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Ésta póliza cubre todo tipo de enfermedades. Escoge la clínica y el médico sin depender de la EPS.
-          </div>
-        </div>
-      </div>
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Servicios</h2>
+                
+                <!-- Primera fila: 4 círculos -->
+                <div class="services-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-heartbeat"></i>
+                                <h3>Salud</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>SALUD</h3>
+                                <p>Ésta póliza cubre todo tipo de enfermedades. Escoge la clínica y el médico sin depender de la EPS.</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-home fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">HOGAR</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Aseguramos tu vivienda y/o contenidos contra imprevistos como terremotos, incendios, hurtos, etc.
-          </div>
-        </div>
-      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-home"></i>
+                                <h3>Hogar</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>HOGAR</h3>
+                                <p>Aseguramos tu vivienda y/o contenidos contra imprevistos como terremotos, incendios, hurtos, etc.</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-car fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">VEHÍCULO</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Protegemos tu vehículo mediante una póliza todo riesgo.
-          </div>
-        </div>
-      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-car"></i>
+                                <h3>Vehículo</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>VEHÍCULO</h3>
+                                <p>Protegemos tu vehículo mediante una póliza todo riesgo.</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-gavel fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">DEMANDA</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Cobertura legal en caso de daños, perjuicios o incluso fallecimiento.
-          </div>
-        </div>
-      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-gavel"></i>
+                                <h3>Demanda</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>DEMANDA</h3>
+                                <p>Cobertura legal en caso de daños, perjuicios o incluso fallecimiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-building fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">EMPRESA</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Protegemos tu empresa para que crezca sin importar lo que pase.
-          </div>
-        </div>
-      </div>
+                <!-- Segunda fila: 3 círculos centrados -->
+                <div class="service-row-offset" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-building"></i>
+                                <h3>Empresa</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>EMPRESA</h3>
+                                <p>Protegemos tu empresa para que crezca sin importar lo que pase.</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-graduation-cap fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">UNIVERSIDAD</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Asegura la educación de tus hijos, tu mayor herencia.
-          </div>
-        </div>
-      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>Universidad</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>UNIVERSIDAD</h3>
+                                <p>Asegura la educación de tus hijos, tu mayor herencia.</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="flip-card bg-white shadow-lg rounded-xl relative">
-        <div class="flip-card-inner w-full h-60 relative">
-          <div class="flip-card-front flex flex-col items-center justify-center text-red-700">
-            <i class="fas fa-users fa-3x mb-2"></i>
-            <h3 class="font-bold text-lg">FAMILIA</h3>
-          </div>
-          <div class="flip-card-back flex items-center justify-center text-sm text-center">
-            Protegemos a tus seres queridos en caso de que faltes o te incapacites.
-          </div>
-        </div>
-      </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-users"></i>
+                                <h3>Familia</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>FAMILIA</h3>
+                                <p>Protegemos a tus seres queridos en caso de que faltes o te incapacites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Seguros Ejemplo S.A.S. | 50 años de confianza</p>
+    </footer>
 </body>
 </html>
