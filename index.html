@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seguros con 50 Años de Experiencia</title>
+  <title>Rodrigo Gomez</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <script>
     window.addEventListener('DOMContentLoaded', () => {
@@ -39,14 +40,36 @@
           }
         }
       });
+
+      $('a[href^="#"]').on('click', function(event) {
+        event.preventDefault();
+        
+        const target = $(this.getAttribute('href'));
+        if(target.length) {
+          const navbarHeight = $('.navbar').height();
+          const targetOffset = target.offset().top - navbarHeight;
+          
+          $('html, body').animate({
+            scrollTop: targetOffset
+          }, 1000, 'easeInOutQuad');
+        }
+      });
     });
+
+    jQuery.easing['easeInOutQuad'] = function(x, t, b, c, d) {
+      if ((t/=d/2) < 1) return c/2*t*t + b;
+      return -c/2 * ((--t)*(t-2) - 1) + b;
+    };
   </script>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar-container">
-      <h1 class="navbar-brand">Seguros Ejemplo</h1>
+      <div class="navbar-brand">
+        <!-- Aquí puedes colocar tu logo -->
+        <h1>Rodrigo Gomez</h1>
+      </div>
       <div class="navbar-links">
         <a href="#" class="nav-link">Inicio</a>
         <a href="#nosotros" class="nav-link">Nosotros</a>
@@ -61,9 +84,9 @@
   <main>
     <!-- Hero -->
     <section class="hero-section" data-aos="fade-up">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">50 Años Asegurando Tu Futuro</h1>
-      <p class="text-lg md:text-2xl max-w-2xl mb-6">Confianza, compromiso y experiencia al servicio de miles de familias y empresas.</p>
-      <a href="#servicios" class="btn btn-white">Conócenos</a>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">SOMOS LA EXPERIENCIA EN SEGUROS</h1>
+      <p class="text-lg md:text-2xl max-w-2xl mb-6">Para protegerte a tí, a tus bienes y a tu patrimonio</p>
+      <a href="#nosotros" class="btn btn-white">Conócenos</a>
     </section>
 
     <!-- Nosotros -->
