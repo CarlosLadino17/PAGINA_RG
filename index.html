@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="img/logo_RG.ico" type="image/x-icon">
+  <link rel="icon" href="img/logo.ico" type="image/x-icon">
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       AOS.init({
@@ -67,24 +67,23 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar-container">
-      <div class="navbar-brand">
-        <!-- Aquí puedes colocar tu logo -->
-        <h1>Rodrigo Gomez</h1>
-      </div>
+      <a href="#inicio" class="navbar-brand -ml-32">
+        <img src="img/logo_rg.jpeg" alt="Logo" class="h-20 w-auto object-contain">
+      </a>
       <div class="navbar-links">
         <a href="#" class="nav-link">Inicio</a>
-        <a href="#nosotros" class="nav-link">Nosotros</a>
-        <a href="seguros.html" class="nav-link">Seguros</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="experiencia.html" class="nav-link">Experiencia</a>
         <a href="contacto.html" class="nav-link">Contacto</a>
-        <a href="blog.html" class="nav-link">Blog</a>
-        <a href="preguntas.html" class="nav-link">FAQ</a>
+        <a href="clientes.html" class="nav-link">Clientes y aliados</a>
       </div>
     </div>
   </nav>
 
   <main>
     <!-- Hero -->
-    <section class="hero-section" data-aos="fade-up">
+    <section class="hero-section" id="inicio" data-aos="fade-up">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">SOMOS LA EXPERIENCIA EN SEGUROS</h1>
       <p class="text-lg md:text-2xl max-w-2xl mb-6">Para protegerte a tí, a tus bienes y a tu patrimonio</p>
       <a href="#nosotros" class="btn btn-white">Conócenos</a>
